@@ -33,7 +33,7 @@ function FormAndroid (props){
                 "Size":size,
                 "Type":"Paid"
             };
-            const URLREQUEST = "http://localhost:5000/android-predict/";
+            const URLREQUEST = "https://apistudentexchange.azurewebsites.net/android-predict/";
             axios.post(URLREQUEST, PARAMS)
             .then(res => {
                 console.log("RESPONSE:",res.data)
